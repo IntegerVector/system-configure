@@ -1,0 +1,3 @@
+snapd
+vim
+com.github.donadigo.eddy
