@@ -18,6 +18,7 @@ function parse_arguments {
     "--help")
         print_help
         ;;
+    # TODO:
     "--skip")
         set_skip $@
         ;;
@@ -39,7 +40,7 @@ function print_help {
 }
 
 function set_skip {
-    echo "skip"
+    echo "feature not implemented"
 }
 
 function install_pakages {
@@ -72,8 +73,6 @@ function install_pakages {
             eval "$execute $package_name" && echo $package_name "installed"
         done < "$file_name"
     fi
-
-    echo "Finished!"
 }
 
 if [ $# -gt 0 ]
