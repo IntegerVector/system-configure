@@ -6,7 +6,6 @@ git
 gnome-calculator
 gparted
 kdeconnect
-firefox
 com.github.donadigo.eddy
 com.github.ronnydo.colorpicker
 com.github.gijsgoudzwaard.image-optimizer

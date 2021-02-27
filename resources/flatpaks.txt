@@ -1,6 +1,7 @@
 com.github.joseexposito.touche
 org.gnome.Characters
 org.gnome.clocks
+org.mozilla.firefox
 com.transmissionbt.Transmission
 com.github.robertsanseries.ciano
 com.github.maoschanz.drawing

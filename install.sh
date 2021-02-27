@@ -1,9 +1,9 @@
 #!/bin/bash
 
-DEBS_FILE="debs.txt"
-SNAPS_FILE="snaps.txt"
-FLATPAKS_FILE="flatpaks.txt"
-APP_IMAGES_FILE="appimages.txt"
+DEBS_FILE="resources/debs.txt"
+SNAPS_FILE="resources/snaps.txt"
+FLATPAKS_FILE="resources/flatpaks.txt"
+APP_IMAGES_FILE="resources/appimages.txt"
 
 APT_EXEC="sudo apt install -y"
 SNAP_EXEC="sudo snap install"
