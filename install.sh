@@ -58,6 +58,7 @@ function install_pakages {
     "flatpaks")
         file_name=$FLATPAKS_FILE
         execute=$FLATPAK_EXEC
+        sudo flatpak override --filesystem=~/.themes
         ;;
     "appimages")
         file_name=$APP_IMAGES_FILE
