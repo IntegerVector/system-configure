@@ -8,8 +8,8 @@ APP_IMAGES_FILE="appimages.txt"
 APT_EXEC="sudo apt install -y"
 SNAP_EXEC="sudo snap install"
 FLATPAK_EXEC="flatpak install flathub -y"
-# ToDo:
-APP_IMAGE_EXEC=""
+APP_IMAGES_FOLDER="Applications"
+APP_IMAGE_EXEC="wget -P /home/$USER/$APP_IMAGES_FOLDER"
 
 echo "install.sh" $@ "script, designed for elementary OS"
 
@@ -61,7 +61,8 @@ function install_pakages {
     "appimages")
         file_name=$APP_IMAGES_FILE
         execute=$APP_IMAGE_EXEC
-       ;;
+        mkdir -p "/home/$USER/Applications"
+        ;;
     esac
 
     if [ -e $file_name ]
