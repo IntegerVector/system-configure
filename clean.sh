@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "clear.sh" $@ "script, designed for elementary OS"
+echo "clean.sh" $@ "script, designed for elementary OS"
 
 sudo apt autoclean
 sudo apt clean
