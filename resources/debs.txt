@@ -2,9 +2,10 @@
 
 snapd
 net-tools
-wireshark-gtk
+dpkg
 vim
 git
+wireshark-gtk
 gnome-calculator
 gparted
 kdeconnect
