@@ -69,9 +69,12 @@ function install_pakages {
 
     if [ -e $file_name ]
     then
-        while IFS=, read -r package_name
+        while IFS=, read -r line
         do
-            eval "$execute $package_name" && echo $package_name "installed"
+            if [[ $line != "#"* ]]
+            then
+                eval "$execute $line" && echo $line "installed"
+            fi
         done < "$file_name"
     fi
 }

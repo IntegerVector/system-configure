@@ -1,3 +1,5 @@
+# Debian packages list:
+
 snapd
 net-tools
 wireshark-gtk

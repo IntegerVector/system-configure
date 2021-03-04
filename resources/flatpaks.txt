@@ -1,3 +1,5 @@
+# Flatpak packages references:
+
 com.github.joseexposito.touche
 org.gnome.Characters
 org.gnome.clocks
