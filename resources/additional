@@ -1,6 +1,5 @@
-# In this file you may wright any commands you want to be executed at the end of script execution
+# In this file you may wright any commands you want to be executed at the end of install.sh script execution
 # It's literary just a script that will be running at the end of installing of all the packages
-
 
 # Installation of Google chrome
 echo "Google chrome installation..."
@@ -18,9 +17,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 nvm ls-remote
-
 echo -n "Select version of nodejs to install: "
 read node_version
 
 nvm install $node_version && echo "node js installed!"
-
