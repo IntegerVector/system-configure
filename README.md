@@ -14,6 +14,8 @@ $ ./update.sh # for updating debs, snaps and flatpak packages
 $ ./clear.sh # will delete old packages to free memory
 ```
 
+In `resources/additional` file you can write any custom script and they can be executed at the end of work of `install.sh` script
+
 `install.sh` script has "help" option, check help page by running
 ```sh
 $ ./install.sh --help
