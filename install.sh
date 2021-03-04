@@ -18,29 +18,23 @@ function parse_arguments {
     "--help")
         print_help
         ;;
-    # TODO:
-    "--skip")
-        set_skip $@
-        ;;
     esac
 }
 
 function print_help {
-    echo "Usage: bash install.sh [options] [packages list]"
+    echo "Usage: bash install.sh [--help]"
     echo ""
     echo "Created for simple installation of packages"
     echo "Write list of necessary pakages in related .txt files and script will install them"
     echo ""
     echo "options:"
     echo "  --help - for printing this help message"
-    echo "  --skip [list of packages names to ignore their installation] - specifies packages instalation of wich will be skipped"
+    echo "usage:"
+    echo "  run install.sh script and specify (by entering 'y' or 'n') wich packages you want to install"
+    echo "  than type in your password and wait untill all will be done"
     echo ""
     echo "This script will forse to use 'sudo' privileges"
     exit
-}
-
-function set_skip {
-    echo "feature not implemented"
 }
 
 function install_pakages {

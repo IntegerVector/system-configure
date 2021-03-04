@@ -14,7 +14,7 @@ $ ./update.sh # for updating debs, snaps and flatpak packages
 $ ./clear.sh # will delete old packages to free memory
 ```
 
-`install.sh` script has options, check them by running
+`install.sh` script has "help" option, check help page by running
 ```sh
 $ ./install.sh --help
 ```
