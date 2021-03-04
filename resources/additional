@@ -1,0 +1,26 @@
+# In this file you may wright any commands you want to be executed at the end of script execution
+# It's literary just a script that will be running at the end of installing of all the packages
+
+
+# Installation of Google chrome
+echo "Google chrome installation..."
+wget -P /home/$USER/Downloads https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i /home/$USER/Downloads/google-chrome-stable_current_amd64.deb
+
+# installation of NVM
+echo "nvm installation..."
+mkdir /home/$USER/Projects
+git clone https://github.com/nvm-sh/nvm.git /home/$USER/Projects/nvm
+/home/$USER/Projects/nvm/install.sh
+
+# This loads nvm:
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+nvm ls-remote
+
+echo -n "Select version of nodejs to install: "
+read node_version
+
+nvm install $node_version && echo "node js installed!"
+

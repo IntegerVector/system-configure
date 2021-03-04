@@ -1,9 +1,10 @@
 #!/bin/bash
 
-DEBS_FILE="resources/debs.txt"
-SNAPS_FILE="resources/snaps.txt"
-FLATPAKS_FILE="resources/flatpaks.txt"
-APP_IMAGES_FILE="resources/appimages.txt"
+DEBS_FILE="resources/debs"
+SNAPS_FILE="resources/snaps"
+FLATPAKS_FILE="resources/flatpaks"
+APP_IMAGES_FILE="resources/appimages"
+ADDITIONAL_SCRIPT_FILE="resources/additional"
 
 APT_EXEC="sudo apt install -y"
 SNAP_EXEC="sudo snap install"
@@ -81,14 +82,17 @@ fi
 echo -n "Install DEBs? [Y/n]: "
 read install_debs
 
-echo -n "Install snaps [Y/n]: "
+echo -n "Install snaps? [Y/n]: "
 read install_snaps
 
-echo -n "Install flatpaks [Y/n]: "
+echo -n "Install flatpaks? [Y/n]: "
 read install_flatpaks
 
-echo -n "Install AppImages [Y/n]: "
+echo -n "Install AppImages? [Y/n]: "
 read install_appimages
+
+echo -n "Execute additional script? [Y/n]"
+read execute_additional
 
 if [ $install_debs == "Y" ] || [ $install_debs == "y" ]
 then
@@ -108,6 +112,12 @@ fi
 if [ $install_appimages == "Y" ] || [ $install_appimages == "y" ]
 then
     install_pakages "appimages"
+fi
+
+if [ $execute_additional == "Y" ] || [ $execute_additional == "y" ]
+then
+    echo "Executing additional script..."
+    bash $ADDITIONAL_SCRIPT_FILE
 fi
 
 echo ""
