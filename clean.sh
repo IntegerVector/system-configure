@@ -2,6 +2,7 @@
 
 echo "clean.sh" $@ "script, designed for elementary OS"
 
+sudo apt autoremove -y
 sudo apt autoclean
 sudo apt clean
 
