@@ -1,6 +1,10 @@
 # In this file you may wright any commands you want to be executed at the end of install.sh script execution
 # It's literary just a script that will be running at the end of installing of all the packages
 
+# Installation of Elementary os tweeks:
+echo "Elementary tweeks installation"
+sudo add-apt-repository ppa:philip.scott/elementary-tweaks && sudo apt install elementary-tweaks
+
 # Installation of Google chrome
 echo "Google chrome installation..."
 wget -P /home/$USER/Downloads https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
