@@ -2,6 +2,7 @@
 
 snapd
 net-tools
+software-properties-common
 dpkg
 vim
 git
