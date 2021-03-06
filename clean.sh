@@ -6,6 +6,8 @@ sudo apt autoremove -y
 sudo apt autoclean
 sudo apt clean
 
+flatpak uninstall -y --unused
+
 set -eu
 sudo snap list --all | awk '/disabled/{print $1, $3}' |
     while read snapname revision; do
