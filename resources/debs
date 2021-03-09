@@ -5,6 +5,7 @@ net-tools
 software-properties-common
 dpkg
 vim
+ranger
 git
 wireshark-gtk
 gnome-calculator
