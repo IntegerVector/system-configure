@@ -3,6 +3,7 @@
 snapd
 net-tools
 software-properties-common
+dconf-editor
 dpkg
 vim
 ranger
