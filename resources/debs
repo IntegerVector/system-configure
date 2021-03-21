@@ -5,6 +5,8 @@ net-tools
 software-properties-common
 dconf-editor
 dpkg
+tlp
+tlp-rdw
 vim
 ranger
 git
